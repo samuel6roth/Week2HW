@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgb(48, 48, 48);
+    --secondary: rgb(74, 123, 180);
+    --misc: rgb(119, 127, 133);
+    --dark: rgb(35, 35, 36);
+    --light: rgb(243, 237, 237);
+}
+
+body {
+    background-color: var(--light);
+}
+
+header {
+    background-color: var(--primary);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    background-color: var(--secondary);
+    padding-left: 10%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 25px;
+    font-size: 60px;
+    color: var(--primary);
+}
+
+.top-banner img{
+    width: 100%;
+    height: 250px;
+}
+
+.top-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 250px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 45px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-size: 40px;
+    padding: 10px 10px 10px 10px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: var(--secondary);
+    font-size: 18px;
+}
+
+.about-me h1 {
+    font-size: 55px;
+    border-right: 4px var(--secondary);
+    border-right-style: solid;
+    height: 165px;
+    padding-right: 15px;
+    margin-right: 25px;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: var(--secondary);
+}
+
+.work div {
+    /*border: 1px red solid;
+    padding: 10px;*/
+}
+
+.worktitle {
+    width: 170px;
+    height: 300px;
+    font-size: 55px;
+    border-right: solid var(--secondary) 4px;
+}
+
+.hannibal img {
+    width: 935px;
+    height: 300px;
+    margin-left: 20px;
+    border: solid var(--secondary) 4px;
+}
+
+.wash img {
+    width: 350px;
+    height: 350px;
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 40px;
+    border: solid var(--secondary) 4px;
+}
+
+.me img{
+    width: 350px;
+    height: 350px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border: solid var(--secondary) 4px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    font-size: 25px;
+    padding-bottom: 20px;
+    background-color: var(--misc);
+    padding-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--secondary);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 25px;
+}
+
+.hannibal {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bl1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-size: 25px;
+    padding: 10px 10px 10px 10px;
+}
+
+.wash {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bl2 {
+    position: absolute;
+    bottom: 20px;
+    left: 300px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-size: 25px;
+    padding: 10px 10px 10px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+    width: 100%;
+    }
+}
